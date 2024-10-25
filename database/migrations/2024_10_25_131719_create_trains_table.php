@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // creazione della tabella trains
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
             $table->string('azienda');
@@ -31,6 +32,7 @@ return new class extends Migration
      */
     public function down(): void
     {
+        // drop della tabella trains
         Schema::dropIfExists('trains');
     }
 };
