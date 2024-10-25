@@ -1,3 +1,3 @@
 <header>
-    <h1>Trains</h1>
+    <h1 class="text-center py-4">Trains</h1>
 </header>
