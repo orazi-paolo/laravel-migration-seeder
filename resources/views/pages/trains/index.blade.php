@@ -3,7 +3,11 @@
 @section("page-title", "Trains")
 
 @section("main-content")
+
 <div class="container">
+    <header>
+        <h1 class="text-center py-4s">Trains</h1>
+    </header>
     <div class="row justify-content-center">
         @foreach($trains as $train)
         <div class="col-4 mb-3">

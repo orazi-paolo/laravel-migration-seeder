@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PassengerController;
 use App\Http\Controllers\TrainController;
 
 /*
@@ -17,3 +18,4 @@ use App\Http\Controllers\TrainController;
 
 // rotta per la pagina dei treni collegata al metodo index del train controller
 Route::get('/', [TrainController::class, 'index'])->name('train.index');
+Route::get('/passenger', [PassengerController::class, 'index'])->name('passengers.index');
